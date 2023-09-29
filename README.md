@@ -1,21 +1,23 @@
-# 基于springboot的家具销售电商管理系统
+# 基于SSM的物流快递管理系统2
+
+
 
 ## 1、项目介绍
 
-基于springboot的家具销售电商管理系统拥有两种角色：管理员和用户
+基于SSM的物流快递管理系统2拥有三个角色：
 
-管理员：分类管理、热销家具管理、折扣家具管理、用户管理、订单评价管理、公告管理、订单管理等
+管理员：用户管理、管理员管理、新闻公告管理、留言管理、取件预约管理、收件管理、货物分类管理、发件信息管理等
 
-用户：登录注册、下单、历史订单、充值、退款、确认收货、购物车等
+用户：收件预约、发件、我的订单、地址管理、我的快递、我的收件预约、留言
 
-![系统架构图](https://s2.loli.net/2023/09/29/OUrP19W7LS3nMEH.jpg)
+快递员：取件查询、物流订单管理
 
 
 ## 2、项目技术
 
-后端框架：springboot、Mybatis
+后端框架：SSM（Spring、SpringMVC、Mybatis）
 
-前端技术：Bootstrap、html、css、JavaScript、JQuery
+前端技术：Bootstrap、jsp、css、JavaScript、JQuery
 
 ## 3、开发环境
 
@@ -23,60 +25,71 @@
 - IDE类型：IDEA、Eclipse都可运行
 - tomcat版本：Tomcat 7-10版本均可
 - 数据库类型：MySql（5.5-5.7、8.x版本都可） 
-- maven版本：无限制
-- 硬件环境：Windows 或者 Mac OS
+- maven项目：否
+- 硬件环境：Windows
 
 
 ## 4、功能介绍
 
 ### 4.1 登录
 
-![登录](https://s2.loli.net/2023/09/29/6ACfQhwoOJYPNpV.jpg)
+![登录](https://s2.loli.net/2023/09/29/EhlBZIWFLYoVdRz.jpg)
 
-### 4.2前端 模块
+### 4.2 前端模块
 
-![前端-热销家具](https://s2.loli.net/2023/09/29/jRxhXmT1NnuoGDe.jpg)
-
-![前端-公告](https://s2.loli.net/2023/09/29/wDY1BI7LTH6CSEd.jpg)
-
-![前端-家具详情](https://s2.loli.net/2023/09/29/nfg862TXso1d3Pe.jpg)
+![前端-首页](https://s2.loli.net/2023/09/29/YcU9IphZbTSDaoL.jpg)
 
 ### 4.3 用户模块
 
-![用户-购物车](https://s2.loli.net/2023/09/29/PBfkJAHzs36bQUd.jpg)
+![用户-地址管理](https://s2.loli.net/2023/09/29/PwVMHabG6EeXZKv.jpg)
 
-![用户-下单](https://s2.loli.net/2023/09/29/c7OK1YyqbACl6u2.jpg)
+![用户-我的快递](https://s2.loli.net/2023/09/29/ODfjY18HsV6SiCr.jpg)
 
-![用户-历史订单](https://s2.loli.net/2023/09/29/SK2VoCfh6YTxciR.jpg)
+![用户-发件管理](https://s2.loli.net/2023/09/29/X5JMlaVcq8b7KPi.jpg)
 
-![用户-地址](https://s2.loli.net/2023/09/29/mpALgWEqheMyvso.jpg)
+![用户-我的订单](https://s2.loli.net/2023/09/29/t537gmdRyGkoxeP.jpg)
 
-![用户-个人信息](https://s2.loli.net/2023/09/29/J94eZMEvSyc8Hg3.jpg)
+![用户-添加预约取件](https://s2.loli.net/2023/09/29/WcJZwr3Iauy6Sk1.jpg)
 
-### 4.4 管理员模块
+![用户-收件预约订单](https://s2.loli.net/2023/09/29/83HCKswMklbI6io.jpg)
 
-![管理员-家具分类管理](https://s2.loli.net/2023/09/29/b4oNHTDwBhgqRtQ.jpg)
+### 4.4 快递模块
 
-![管理员-热销家具管理](https://s2.loli.net/2023/09/29/UmVICph7iNKL528.jpg)
+![快递-取件查询](https://s2.loli.net/2023/09/29/I1DJOjKlFmiy82C.jpg)
 
-![管理员-热销家具详情](https://s2.loli.net/2023/09/29/obNnE7QVG3lJswv.jpg)
+![快递-创建物流单号](https://s2.loli.net/2023/09/29/FkDzRxWrc4fgjiA.jpg)
 
-![管理员-折扣家具管理](https://s2.loli.net/2023/09/29/bosO4BCQtxu7VlA.jpg)
+### 4.5 管理员模块
 
-![管理员-用户管理](https://s2.loli.net/2023/09/29/qToEjmhvOnlIBQV.jpg)
+![管理员-用户管理](https://s2.loli.net/2023/09/29/Izr8Q4sPEtY51i6.jpg)
 
-![管理员-订单评价管理](https://s2.loli.net/2023/09/29/lgmtD2Br8MYcKwp.jpg)
+![管理员-管理员信息管理](https://s2.loli.net/2023/09/29/mMnVjgSyEqfocvJ.jpg)
 
-![管理员-公告管理](https://s2.loli.net/2023/09/29/5S4jCvlwAVsbdFR.jpg)
+![管理员-添加新闻公告](https://s2.loli.net/2023/09/29/WFk9K2eyVPbdjrB.jpg)
 
-![管理员-订单管理](https://s2.loli.net/2023/09/29/8rNl2pmEbvaHQCA.jpg)
+![管理员-公告管理](https://s2.loli.net/2023/09/29/OYisgfCEUI6hkrB.jpg)
 
-### 4.5 文档目录
+![管理员-留言管理](https://s2.loli.net/2023/09/29/fc7LObzCdTJtUHg.jpg)
 
-![文档目录](https://s2.loli.net/2023/09/29/xc1UMG7kwvI43Dq.jpg)
+![管理员-取件预约管理](https://s2.loli.net/2023/09/29/DKXdbIu4Tt7wmcf.jpg)
+
+![管理员-快递员管理](https://s2.loli.net/2023/09/29/oDInO7y8HBPTMe1.jpg)
+
+![管理员-收件管理](https://s2.loli.net/2023/09/29/4s16StqUoPkRjix.jpg)
+
+![管理员-货物分类管理](https://s2.loli.net/2023/09/29/rghNvucTWPVbtZp.jpg)
+
+![管理员-发件预约管理](https://project-images-1256969109.cos.ap-chongqing.myqcloud.com/ Typora-Images/202309221228762.jpg)
+
+### 4.6 文档目录
+
+![文档目录](https://s2.loli.net/2023/09/29/B8XtblPFKQ2mok3.jpg)
+
+
 
 ### 获取方式&视频演示
 
-下方扫一下，回复关键词：商城
+下方扫一下，回复关键词：物流
 
-![gitee](https://s2.loli.net/2023/09/29/51jRUuCt8zqGFDc.png)
+![gitee](https://project-images-1256969109.cos.ap-chongqing.myqcloud.com/Typora-Images/202309291447341.png)
+
